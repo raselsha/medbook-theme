@@ -22,6 +22,77 @@ add_action('after_setup_theme', function () {
     ));
 });
 
+/**
+ * First-activation default menu — Appointment, Doctors, Live Queue, Login,
+ * in that order (Appointment first: it's the site's front page). Only runs
+ * when NO menu is already assigned to medbook-primary, so it never touches
+ * (or reorders) a menu an admin has already set up or hand-edited — this is
+ * purely what a *fresh* install gets automatically, not an ongoing sync.
+ * Matches pages by which page-templates/*.php template they're assigned to
+ * (set via the block editor's Page Attributes panel), not by slug/title,
+ * since those vary per site (e.g. "book-appointment" vs "appointment").
+ */
+add_action('after_switch_theme', 'medbook_setup_default_menu');
+function medbook_setup_default_menu()
+{
+    if (has_nav_menu('medbook-primary')) {
+        return;
+    }
+
+    $menu_items = array(
+        'page-templates/appointment.php' => __('Appointment', 'medbook'),
+        'page-templates/doctors.php'     => __('Doctors', 'medbook'),
+        'page-templates/live-queue.php'  => __('Live Queue', 'medbook'),
+        'page-templates/login.php'       => __('Login', 'medbook'),
+    );
+
+    $pages_found = array();
+    foreach ($menu_items as $template => $label) {
+        $matches = get_posts(array(
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'posts_per_page' => 1,
+            'meta_key'       => '_wp_page_template',
+            'meta_value'     => $template,
+        ));
+        if ($matches) {
+            $pages_found[$template] = $matches[0];
+        }
+    }
+
+    // Nothing to build a menu out of yet (e.g. activated before any of the
+    // four pages were created) — leave it for a later activation once pages
+    // exist, rather than creating an empty menu now.
+    if (!$pages_found) {
+        return;
+    }
+
+    $menu_name = __('MedBook Menu', 'medbook');
+    $menu_id = wp_create_nav_menu($menu_name);
+    if (is_wp_error($menu_id)) {
+        return;
+    }
+
+    $position = 0;
+    foreach ($menu_items as $template => $label) {
+        if (!isset($pages_found[$template])) {
+            continue;
+        }
+        wp_update_nav_menu_item($menu_id, 0, array(
+            'menu-item-title'     => $label,
+            'menu-item-object-id' => $pages_found[$template]->ID,
+            'menu-item-object'    => 'page',
+            'menu-item-type'      => 'post_type',
+            'menu-item-status'    => 'publish',
+            'menu-item-position'  => ++$position,
+        ));
+    }
+
+    $locations = get_theme_mod('nav_menu_locations', array());
+    $locations['medbook-primary'] = $menu_id;
+    set_theme_mod('nav_menu_locations', $locations);
+}
+
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('medbook-theme', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('medbook-nav', get_theme_file_uri('assets/js/nav.js'), array(), wp_get_theme()->get('Version'), true);
