@@ -1,0 +1,254 @@
+/*
+Theme Name: MedBook
+Theme URI: https://shafiulamraz.local
+Author: Shahadat Hossain
+Description: Custom theme for the clinic's public site. Provides the top navigation (Doctors / Appointment / Live Queue / Login) and four page templates that each embed one doctor-appointment plugin shortcode ([mdbk_doctor_list], [mdbk_appointment_form], [mdbk_queue_list]) plus a custom Login screen — every template still renders the page's own edited content too, so a page using one of these templates can be freely designed in the block editor while the functional widget always renders alongside it. The Book Appointment page is the site's front page.
+Version: 1.0.0
+Requires at least: 5.8
+Requires PHP: 7.4
+Text Domain: medbook
+*/
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+}
+img { max-width: 100%; height: auto; }
+a { color: inherit; }
+
+/* ===== Header / nav ===== */
+.medbook-header {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    /* WP core's admin-bar.css sets --wp-admin--admin-bar--height on <html>
+       (32px desktop, 46px under its own 782px breakpoint) only while
+       #wpadminbar is actually showing (a logged-in visitor on the front
+       end) — so the header sticks right below the admin bar instead of
+       under/behind it, and falls back to 0 when the bar isn't there at all
+       (a logged-out visitor, where the variable is never defined). */
+    top: var(--wp-admin--admin-bar--height, 0px);
+    z-index: 100;
+}
+.medbook-header-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.medbook-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #0d9488;
+    font-weight: 800;
+    font-size: 19px;
+}
+.medbook-brand img {
+    height: 36px;
+    width: auto;
+    border-radius: 8px;
+}
+.medbook-brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.medbook-nav-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1e293b;
+}
+
+.medbook-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.medbook-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.medbook-nav a {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    transition: background .15s ease, color .15s ease;
+}
+.medbook-nav a:hover { background: #f0fdfa; color: #0d9488; }
+.medbook-nav .current-menu-item a,
+.medbook-nav a.is-active { background: #0d9488; color: #fff; }
+.medbook-nav .medbook-nav-cta a {
+    background: #0d9488;
+    color: #fff;
+}
+.medbook-nav .medbook-nav-cta a:hover { background: #0f766e; }
+
+@media (max-width: 860px) {
+    .medbook-nav-toggle { display: flex; }
+    .medbook-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid #e2e8f0;
+        box-shadow: 0 12px 24px rgba(15, 23, 42, .08);
+    }
+    .medbook-nav.is-open { display: block; }
+    .medbook-nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 8px; }
+    .medbook-nav a { display: block; padding: 12px 16px; }
+}
+
+/* ===== Page wrapper (the four shortcode-backed templates) ===== */
+.medbook-page { max-width: 1120px; margin: 0 auto; padding: 40px 24px 64px; }
+.medbook-page-title { font-size: 28px; font-weight: 800; margin: 0 0 24px; color: #0f172a; }
+.medbook-page-content { margin-bottom: 28px; }
+.medbook-page-content:empty { display: none; }
+.medbook-page-shortcode { }
+
+/* ===== Footer ===== */
+.medbook-footer {
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 48px;
+}
+.medbook-footer-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+.medbook-footer-menu { display: flex; gap: 16px; list-style: none; margin: 0; padding: 0; }
+.medbook-footer-links a { text-decoration: none; color: #64748b; font-weight: 600; }
+.medbook-footer-links a:hover { color: #0d9488; }
+
+/* ===== Login page (page-templates/login.php) ===== */
+.medbook-login-body {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(20, 184, 166, .12), transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(13, 148, 136, .10), transparent 45%),
+        #f8fafc;
+}
+.medbook-login-wrap { width: 100%; max-width: 400px; }
+.medbook-login-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .10), 0 2px 8px rgba(15, 23, 42, .04);
+    padding: 44px 36px 36px;
+    border: 1px solid #eef2f7;
+}
+.medbook-login-brand { text-align: center; margin-bottom: 30px; }
+.medbook-login-mark {
+    width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 16px;
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+    display: flex; align-items: center; justify-content: center; color: #fff;
+    box-shadow: 0 8px 20px rgba(13, 148, 136, .3);
+    overflow: hidden;
+}
+.medbook-login-mark img { width: 100%; height: 100%; object-fit: cover; }
+.medbook-login-logo { font-size: 22px; font-weight: 800; color: #0d9488; margin: 0 0 4px; line-height: 1.3; word-break: break-word; }
+.medbook-login-tagline { font-size: 13px; color: #94a3b8; margin: 0; font-weight: 500; }
+
+.medbook-form-row { margin-bottom: 18px; }
+.medbook-form-row label { display: block; font-size: 12.5px; font-weight: 700; color: #475569; margin-bottom: 7px; }
+.medbook-form-row input[type="text"],
+.medbook-form-row input[type="password"] {
+    width: 100%; height: 46px; padding: 0 16px; border: 1.5px solid #e2e8f0; border-radius: 13px;
+    background: #f8fafc; font-size: 14px; font-family: inherit; color: #1e293b;
+    transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.medbook-form-row input[type="text"]:focus,
+.medbook-form-row input[type="password"]:focus {
+    outline: none; border-color: #0d9488; background: #fff; box-shadow: 0 0 0 3.5px rgba(13, 148, 136, .13);
+}
+
+.medbook-password-field { position: relative; }
+.medbook-password-field input { padding-right: 46px !important; }
+.medbook-password-toggle {
+    position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+    width: 34px; height: 34px; border: none; background: none; color: #94a3b8; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; border-radius: 8px;
+}
+.medbook-password-toggle:hover { background: #f1f5f9; color: #475569; }
+
+.medbook-form-row-inline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.medbook-checkbox-label { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #475569; cursor: pointer; margin: 0; }
+.medbook-checkbox-label input[type="checkbox"] { width: 16px; height: 16px; accent-color: #0d9488; cursor: pointer; }
+
+.medbook-login-submit {
+    width: 100%; height: 48px; border: none; border-radius: 13px; background: #0d9488; color: #fff;
+    font-family: inherit; font-size: 14.5px; font-weight: 700; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    transition: background .15s ease, transform .1s ease;
+}
+.medbook-login-submit:hover { background: #0f766e; }
+.medbook-login-submit:active { transform: scale(.99); }
+.medbook-login-submit[disabled] { opacity: .7; cursor: default; }
+
+.medbook-login-spinner {
+    width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff;
+    animation: medbook-spin .7s linear infinite; display: none;
+}
+.medbook-login-submit.is-loading .medbook-login-spinner { display: inline-block; }
+.medbook-login-submit.is-loading .medbook-login-submit-label { opacity: .85; }
+@keyframes medbook-spin { to { transform: rotate(360deg); } }
+
+.medbook-login-alert {
+    padding: 12px 14px; border-radius: 12px; font-size: 13px; font-weight: 600; margin-bottom: 18px;
+    display: flex; align-items: center; gap: 8px;
+}
+.medbook-login-alert-error { background: #fee2e2; color: #dc2626; }
+.medbook-login-alert-success { background: #ccfbf1; color: #0f766e; }
+.medbook-login-alert svg { flex-shrink: 0; }
+
+.medbook-login-link { font-size: 12.5px; font-weight: 700; color: #0d9488; text-decoration: none; }
+.medbook-login-link:hover { text-decoration: underline; }
+.medbook-back-link { display: block; text-align: center; margin-top: 18px; }
+.medbook-forgot-hint { font-size: 13px; color: #64748b; line-height: 1.6; margin: 0 0 20px; }
+
+@media (max-width: 480px) {
+    .medbook-login-card { padding: 34px 22px 28px; border-radius: 20px; }
+    .medbook-login-body { padding: 24px 16px; }
+}
