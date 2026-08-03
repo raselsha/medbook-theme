@@ -23,6 +23,23 @@ add_action('after_setup_theme', function () {
 });
 
 /**
+ * Finds the one published page assigned to a given page-templates/*.php
+ * template — the portable way to find e.g. "the Live Queue page" on any
+ * site regardless of what its slug/title happen to be there.
+ */
+function medbook_get_page_by_template($template)
+{
+    $matches = get_posts(array(
+        'post_type'      => 'page',
+        'post_status'    => 'publish',
+        'posts_per_page' => 1,
+        'meta_key'       => '_wp_page_template',
+        'meta_value'     => $template,
+    ));
+    return $matches ? $matches[0] : null;
+}
+
+/**
  * First-activation default menu — Appointment, Doctors, Live Queue, Login,
  * in that order (Appointment first: it's the site's front page). Only runs
  * when NO menu is already assigned to medbook-primary, so it never touches
@@ -48,15 +65,9 @@ function medbook_setup_default_menu()
 
     $pages_found = array();
     foreach ($menu_items as $template => $label) {
-        $matches = get_posts(array(
-            'post_type'      => 'page',
-            'post_status'    => 'publish',
-            'posts_per_page' => 1,
-            'meta_key'       => '_wp_page_template',
-            'meta_value'     => $template,
-        ));
-        if ($matches) {
-            $pages_found[$template] = $matches[0];
+        $page = medbook_get_page_by_template($template);
+        if ($page) {
+            $pages_found[$template] = $page;
         }
     }
 

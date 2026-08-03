@@ -105,8 +105,13 @@ a { color: inherit; }
     transition: background .15s ease, color .15s ease;
 }
 .medbook-nav a:hover { background: #f0fdfa; color: #0d9488; }
+/* Current-page state is a light tint, not a solid fill — it needs to read
+   as "you are here" (a passive location indicator), visually distinct from
+   .medbook-nav-cta (Logout) below, which is a solid pill because it's an
+   actual clickable action. Using the same solid teal for both made the
+   current page look like a button and Logout look like a location. */
 .medbook-nav .current-menu-item a,
-.medbook-nav a.is-active { background: #0d9488; color: #fff; }
+.medbook-nav a.is-active { background: #ccfbf1; color: #0f766e; }
 .medbook-nav .medbook-nav-cta a {
     background: #0d9488;
     color: #fff;
@@ -136,6 +141,94 @@ a { color: inherit; }
 .medbook-page-content { margin-bottom: 28px; }
 .medbook-page-content:empty { display: none; }
 .medbook-page-shortcode { }
+
+/* ===== Appointment page hero + extra sections (page-templates/appointment.php,
+   non-Elementor branch only — an Elementor-managed page supplies all of this
+   itself). Full-bleed section sitting outside .medbook-page's own max-width,
+   with its own centered inner wrapper. */
+.medbook-hero {
+    position: relative;
+    padding: 72px 24px 64px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f766e, #0d9488 55%, #14b8a6);
+    overflow: hidden;
+}
+.medbook-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+.medbook-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, .55), rgba(15, 23, 42, .35));
+}
+.medbook-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.medbook-hero-title { font-size: 38px; font-weight: 800; color: #fff; margin: 0 0 12px; line-height: 1.2; }
+.medbook-hero-subtitle { font-size: 17px; color: rgba(255, 255, 255, .88); margin: 0; line-height: 1.6; }
+
+/* The booking widget card floats slightly up into the hero's bottom edge —
+   the plugin's own [mdbk_appointment_form] markup already renders as a
+   white rounded card, so this just needs to pull it upward and keep it
+   above the hero via z-index/position, not restyle the card itself. */
+.medbook-page-shortcode--card {
+    position: relative;
+    z-index: 2;
+    margin: -40px auto 8px;
+    max-width: 480px;
+}
+
+.medbook-section { padding: 56px 0 8px; }
+.medbook-section-title { font-size: 26px; font-weight: 800; color: #0f172a; text-align: center; margin: 0 0 36px; }
+
+.medbook-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.medbook-step { text-align: center; }
+.medbook-step-number { display: block; font-size: 32px; font-weight: 800; color: #99f6e4; -webkit-text-stroke: 1.5px #0d9488; margin-bottom: 8px; }
+.medbook-step h3 { font-size: 17px; font-weight: 700; color: #0f172a; margin: 0 0 8px; }
+.medbook-step p { font-size: 14px; color: #64748b; line-height: 1.6; margin: 0; }
+
+.medbook-cta-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    padding: 32px 36px;
+    border-radius: 20px;
+    background: #ccfbf1;
+}
+.medbook-cta-banner-text h2 { font-size: 20px; font-weight: 800; color: #0f172a; margin: 0 0 4px; }
+.medbook-cta-banner-text p { font-size: 14px; color: #0f766e; margin: 0; }
+.medbook-cta-banner-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: #0d9488;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .15s ease;
+}
+.medbook-cta-banner-btn:hover { background: #0f766e; }
+
+@media (max-width: 780px) {
+    .medbook-hero { padding: 56px 20px 72px; }
+    .medbook-hero-title { font-size: 28px; }
+    .medbook-page-shortcode--card { margin-top: -56px; }
+    .medbook-steps { grid-template-columns: 1fr; gap: 32px; }
+    .medbook-cta-banner { flex-direction: column; text-align: center; padding: 28px 24px; }
+}
 
 /* ===== Footer ===== */
 .medbook-footer {
