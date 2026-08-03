@@ -173,14 +173,11 @@ a { color: inherit; }
 .medbook-hero-title { font-size: 38px; font-weight: 800; color: #fff; margin: 0 0 12px; line-height: 1.2; }
 .medbook-hero-subtitle { font-size: 17px; color: rgba(255, 255, 255, .88); margin: 0; line-height: 1.6; }
 
-/* The booking widget card floats slightly up into the hero's bottom edge —
-   the plugin's own [mdbk_appointment_form] markup already renders as a
-   white rounded card, so this just needs to pull it upward and keep it
-   above the hero via z-index/position, not restyle the card itself. */
 .medbook-page-shortcode--card {
     position: relative;
     z-index: 2;
-    margin: -40px auto 8px;
+    display: flow-root;
+    margin: 0 auto;
     max-width: 480px;
 }
 
@@ -225,9 +222,24 @@ a { color: inherit; }
 @media (max-width: 780px) {
     .medbook-hero { padding: 56px 20px 72px; }
     .medbook-hero-title { font-size: 28px; }
-    .medbook-page-shortcode--card { margin-top: -56px; }
+    /* NOT overriding .medbook-page-shortcode--card's margin-top here — it
+       stays at the base rule's -40px, which exactly cancels out
+       .medbook-page's own 40px top padding (net 0, card flush with the
+       hero's bottom edge). An earlier -56px override here overshot that by
+       16px with nothing to cancel it, pulling the card up INTO the hero
+       instead of just flush against it. */
     .medbook-steps { grid-template-columns: 1fr; gap: 32px; }
     .medbook-cta-banner { flex-direction: column; text-align: center; padding: 28px 24px; }
+}
+
+/* Narrow phones: .medbook-page's own 24px side padding plus the booking
+   widget's own internal card padding compounded into a cramped, narrow form
+   on small screens — the outer page padding is trimmed here specifically
+   (not the widget's own padding, which belongs to the plugin, not this
+   theme) so the form actually gets real width to work with. */
+@media (max-width: 480px) {
+    .medbook-page { padding-left: 12px; padding-right: 12px; }
+    .medbook-hero { padding-left: 16px; padding-right: 16px; }
 }
 
 /* ===== Footer ===== */

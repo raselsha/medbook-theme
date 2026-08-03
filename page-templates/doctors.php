@@ -14,14 +14,20 @@
 defined('ABSPATH') || exit;
 get_header();
 $is_elementor_page = get_post_meta(get_the_ID(), '_elementor_edit_mode', true) === 'builder';
+ob_start();
+while (have_posts()) :
+    the_post();
+    the_content();
+endwhile;
+$page_content = trim(ob_get_clean());
 ?>
 <main class="medbook-page medbook-page--doctors">
     <?php if (!$is_elementor_page) : ?>
         <h1 class="medbook-page-title"><?php the_title(); ?></h1>
     <?php endif; ?>
-    <div class="medbook-page-content">
-        <?php while (have_posts()) : the_post(); the_content(); endwhile; ?>
-    </div>
+    <?php if ('' !== $page_content) : ?>
+        <div class="medbook-page-content"><?php echo $page_content; // phpcs:ignore -- the_content() output, already filtered/escaped by core ?></div>
+    <?php endif; ?>
     <?php if (!$is_elementor_page) : ?>
         <div class="medbook-page-shortcode">
             <?php echo do_shortcode('[mdbk_doctor_list]'); ?>

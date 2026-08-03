@@ -34,14 +34,22 @@ $live_queue_page = medbook_get_page_by_template('page-templates/live-queue.php')
         </div>
     </section>
 <?php endif; ?>
+<?php
+ob_start();
+while (have_posts()) :
+    the_post();
+    the_content();
+endwhile;
+$page_content = trim(ob_get_clean());
+?>
 <main class="medbook-page medbook-page--appointment">
-    <div class="medbook-page-content">
-        <?php while (have_posts()) : the_post(); the_content(); endwhile; ?>
-    </div>
+    <?php if ('' !== $page_content) : ?>
+        <div class="medbook-page-content"><?php echo $page_content; // phpcs:ignore -- the_content() output, already filtered/escaped by core ?></div>
+    <?php endif; ?>
 
     <?php if (!$is_elementor_page) : ?>
         <div class="medbook-page-shortcode medbook-page-shortcode--card">
-            <?php echo do_shortcode('[mdbk_appointment_form]'); ?>
+            <?php echo do_shortcode('[mdbk_appointment_form flush="1"]'); ?>
         </div>
 
         <section class="medbook-section">
