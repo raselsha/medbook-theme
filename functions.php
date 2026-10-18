@@ -256,3 +256,33 @@ function medbook_ajax_forgot_password()
         'message' => __('If an account matches that information, a password reset link has been emailed to it.', 'medbook'),
     ));
 }
+
+/**
+ * Keep usernames private. WP core exposes every account's login slug to
+ * anonymous visitors through four routes — /wp-json/wp/v2/users, the
+ * ?author=N → /author/<slug>/ redirect, the users sitemap, and oEmbed's
+ * author_name — which hands a brute-forcer half the credentials for free.
+ * Logged-in users keep REST access, since wp-admin itself uses it.
+ */
+add_filter('rest_endpoints', function ($endpoints) {
+    if (!is_user_logged_in()) {
+        unset($endpoints['/wp/v2/users'], $endpoints['/wp/v2/users/(?P<id>[\d]+)']);
+    }
+    return $endpoints;
+});
+
+add_action('template_redirect', function () {
+    if (!is_user_logged_in() && (is_author() || isset($_GET['author']))) {
+        wp_safe_redirect(home_url('/'), 301);
+        exit;
+    }
+}, 1);
+
+add_filter('wp_sitemaps_add_provider', function ($provider, $name) {
+    return 'users' === $name ? false : $provider;
+}, 10, 2);
+
+add_filter('oembed_response_data', function ($data) {
+    unset($data['author_name'], $data['author_url']);
+    return $data;
+});
