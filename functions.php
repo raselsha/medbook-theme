@@ -286,3 +286,25 @@ add_filter('oembed_response_data', function ($data) {
     unset($data['author_name'], $data['author_url']);
     return $data;
 });
+
+/**
+ * Baseline security headers on every WP-rendered response (front end,
+ * wp-admin, AJAX, REST). HSTS deliberately omits includeSubDomains/preload
+ * so it can't strand a subdomain that isn't on HTTPS.
+ */
+add_action('send_headers', 'medbook_security_headers');
+add_action('admin_init', 'medbook_security_headers');
+add_action('login_init', 'medbook_security_headers');
+function medbook_security_headers()
+{
+    if (headers_sent()) {
+        return;
+    }
+    header('X-Content-Type-Options: nosniff');
+    header('X-Frame-Options: SAMEORIGIN');
+    header('Referrer-Policy: strict-origin-when-cross-origin');
+    header('Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()');
+    if (is_ssl()) {
+        header('Strict-Transport-Security: max-age=31536000');
+    }
+}
