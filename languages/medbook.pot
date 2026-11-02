@@ -1,0 +1,513 @@
+# Copyright (C) 2026 Shahadat Hossain
+# This file is distributed under the same license as the MedBook theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: MedBook 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/medbook\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-02T13:21:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: medbook\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "MedBook"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://shafiulamraz.local"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Custom theme for the clinic's public site. Provides the top navigation (Doctors / Appointment / Live Queue / Login) and four page templates that each embed one doctor-appointment plugin shortcode ([mdbk_doctor_list], [mdbk_appointment_form], [mdbk_queue_list]) plus a custom Login screen — every template still renders the page's own edited content too, so a page using one of these templates can be freely designed in the block editor while the functional widget always renders alongside it. The Book Appointment page is the site's front page."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Shahadat Hossain"
+msgstr ""
+
+#: footer.php:23
+#: page-templates/home.php:308
+msgid "Chat on WhatsApp"
+msgstr ""
+
+#: functions.php:22
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:41
+msgid "Hi Lieusoft, I tried the MedBook demo and would like it for my clinic."
+msgstr ""
+
+#: functions.php:80
+msgid "Appointment"
+msgstr ""
+
+#: functions.php:81
+#: page-templates/doctors.php:54
+msgid "Doctors"
+msgstr ""
+
+#: functions.php:82
+msgid "Live Queue"
+msgstr ""
+
+#: functions.php:83
+msgid "Login"
+msgstr ""
+
+#: functions.php:101
+msgid "MedBook Menu"
+msgstr ""
+
+#: functions.php:159
+#: page-templates/home.php:306
+msgid "View price"
+msgstr ""
+
+#: functions.php:176
+msgid "Dashboard"
+msgstr ""
+
+#: functions.php:188
+msgid "Custom Link"
+msgstr ""
+
+#: functions.php:189
+msgid "Logout"
+msgstr ""
+
+#: functions.php:250
+msgid "Please enter your username and password."
+msgstr ""
+
+#: functions.php:263
+msgid "Incorrect username or password."
+msgstr ""
+
+#: functions.php:284
+msgid "Please enter your username or email."
+msgstr ""
+
+#: functions.php:293
+msgid "If an account matches that information, a password reset link has been emailed to it."
+msgstr ""
+
+#: header.php:27
+msgid "Menu"
+msgstr ""
+
+#: header.php:51
+msgid "Demo"
+msgstr ""
+
+#: header.php:52
+msgid "Every doctor, patient and booking on this site is fictional — no SMS or email is ever sent."
+msgstr ""
+
+#: header.php:53
+msgid "Try the staff dashboard →"
+msgstr ""
+
+#: index.php:19
+msgid "Nothing found"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Appointment (MedBook)"
+msgstr ""
+
+#: page-templates/appointment.php:33
+msgid "Connect with trusted specialists and confirm your visit in minutes."
+msgstr ""
+
+#: page-templates/appointment.php:56
+msgid "How Booking Works"
+msgstr ""
+
+#: page-templates/appointment.php:60
+msgid "Choose a Specialty"
+msgstr ""
+
+#: page-templates/appointment.php:61
+msgid "Browse our specialists and find the right doctor for your needs."
+msgstr ""
+
+#: page-templates/appointment.php:65
+msgid "Pick Your Time"
+msgstr ""
+
+#: page-templates/appointment.php:66
+msgid "See real-time availability and select a slot that fits your day."
+msgstr ""
+
+#: page-templates/appointment.php:70
+msgid "Confirm & Visit"
+msgstr ""
+
+#: page-templates/appointment.php:71
+msgid "Get instant confirmation, then track your place in the live queue."
+msgstr ""
+
+#: page-templates/appointment.php:79
+msgid "Already Booked?"
+msgstr ""
+
+#: page-templates/appointment.php:80
+msgid "Track your live position in the queue in real time."
+msgstr ""
+
+#: page-templates/appointment.php:82
+#: page-templates/home.php:243
+msgid "View Live Queue"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Doctors (MedBook)"
+msgstr ""
+
+#: page-templates/doctors.php:44
+msgid "Find the right specialist and book in a minute"
+msgstr ""
+
+#: page-templates/doctors.php:45
+msgid "See each doctor's chamber days and hours, then pick a free slot. Your serial number appears instantly."
+msgstr ""
+
+#: page-templates/doctors.php:47
+#: page-templates/doctors.php:166
+#: page-templates/home.php:90
+#: page-templates/home.php:129
+msgid "Book an appointment"
+msgstr ""
+
+#: page-templates/doctors.php:49
+#: page-templates/doctors.php:120
+#: page-templates/home.php:92
+msgid "View live queue"
+msgstr ""
+
+#: page-templates/doctors.php:58
+#: page-templates/home.php:115
+msgid "Specialties"
+msgstr ""
+
+#: page-templates/doctors.php:62
+msgid "Serial"
+msgstr ""
+
+#: page-templates/doctors.php:63
+msgid "Instant"
+msgstr ""
+
+#: page-templates/doctors.php:68
+msgid "A bright, clean treatment room with a dental chair"
+msgstr ""
+
+#: page-templates/doctors.php:90
+msgid "Before your visit"
+msgstr ""
+
+#: page-templates/doctors.php:91
+msgid "Three things that make the day go smoothly."
+msgstr ""
+
+#: page-templates/doctors.php:96
+msgid "Keep your QR code"
+msgstr ""
+
+#: page-templates/doctors.php:97
+msgid "Save or print the confirmation after booking. The front desk scans it to check you in."
+msgstr ""
+
+#: page-templates/doctors.php:101
+msgid "Check in on arrival"
+msgstr ""
+
+#: page-templates/doctors.php:102
+msgid "Your serial joins the doctor's live queue only after you check in at the desk."
+msgstr ""
+
+#: page-templates/doctors.php:106
+msgid "Follow the queue on your phone"
+msgstr ""
+
+#: page-templates/doctors.php:107
+msgid "The live queue shows who is with the doctor now and when the doctor is on a short break."
+msgstr ""
+
+#: page-templates/doctors.php:116
+msgid "FAQ"
+msgstr ""
+
+#: page-templates/doctors.php:117
+msgid "Common questions"
+msgstr ""
+
+#: page-templates/doctors.php:118
+msgid "How booking, check-in and the live queue work."
+msgstr ""
+
+#: page-templates/doctors.php:127
+msgid "How do I get a serial number?"
+msgstr ""
+
+#: page-templates/doctors.php:130
+msgid "Choose a specialty and a doctor, pick a date the doctor sits and a free time, then enter your name and mobile number. The serial number is shown on screen as soon as you confirm."
+msgstr ""
+
+#: page-templates/doctors.php:135
+msgid "Why are some days or times greyed out?"
+msgstr ""
+
+#: page-templates/doctors.php:138
+msgid "Each doctor only sits on certain days. Times that are already booked, or that fall in the doctor's break, cannot be chosen."
+msgstr ""
+
+#: page-templates/doctors.php:143
+msgid "What happens when I reach the clinic?"
+msgstr ""
+
+#: page-templates/doctors.php:146
+msgid "Show your QR code at the front desk. Once you are checked in, your serial appears in the doctor's live queue and you are called in order."
+msgstr ""
+
+#: page-templates/doctors.php:151
+msgid "Can I see how many patients are ahead of me?"
+msgstr ""
+
+#: page-templates/doctors.php:154
+msgid "Yes. Open the Live Queue page on any phone to see who is with the doctor now and the patients still waiting."
+msgstr ""
+
+#: page-templates/doctors.php:163
+msgid "Found your doctor?"
+msgstr ""
+
+#: page-templates/doctors.php:164
+msgid "Book now and get your serial number in seconds."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Home (MedBook)"
+msgstr ""
+
+#: page-templates/home.php:86
+msgid "Doctor appointments & live queue"
+msgstr ""
+
+#: page-templates/home.php:87
+msgid "Book your serial online. Wait at home, not in the chamber."
+msgstr ""
+
+#: page-templates/home.php:88
+msgid "Pick a specialty and a doctor, choose a time, and get your serial number instantly. Then follow the live queue from your phone and arrive just before your turn."
+msgstr ""
+
+#: page-templates/home.php:96
+msgid "Instant serial number"
+msgstr ""
+
+#: page-templates/home.php:97
+msgid "QR check-in at the desk"
+msgstr ""
+
+#: page-templates/home.php:98
+msgid "Live queue on any phone"
+msgstr ""
+
+#: page-templates/home.php:102
+msgid "A doctor in a white coat with a stethoscope"
+msgstr ""
+
+#: page-templates/home.php:106
+msgid "Booking confirmed"
+msgstr ""
+
+#: page-templates/home.php:107
+msgid "Your serial arrives on screen in seconds"
+msgstr ""
+
+#: page-templates/home.php:130
+msgid "Four quick steps — it takes about a minute."
+msgstr ""
+
+#: page-templates/home.php:132
+msgid "Choose a specialty from the dropdown"
+msgstr ""
+
+#: page-templates/home.php:133
+msgid "Pick your doctor"
+msgstr ""
+
+#: page-templates/home.php:134
+msgid "Select a date and time slot"
+msgstr ""
+
+#: page-templates/home.php:135
+msgid "Enter your name and mobile — get your serial"
+msgstr ""
+
+#: page-templates/home.php:138
+msgid "Demo site: use any made-up name and a number like 01700000999 — nothing is sent anywhere."
+msgstr ""
+
+#: page-templates/home.php:150
+msgid "A doctor talking with a patient"
+msgstr ""
+
+#: page-templates/home.php:153
+msgid "How it works"
+msgstr ""
+
+#: page-templates/home.php:158
+msgid "Book online"
+msgstr ""
+
+#: page-templates/home.php:159
+msgid "Pick a specialty, a doctor and a free slot. Your serial number appears straight away, with a QR code to show at the desk."
+msgstr ""
+
+#: page-templates/home.php:165
+msgid "Check in when you arrive"
+msgstr ""
+
+#: page-templates/home.php:166
+msgid "The front desk scans your QR code and your serial joins the doctor's live queue."
+msgstr ""
+
+#: page-templates/home.php:172
+msgid "Watch your turn live"
+msgstr ""
+
+#: page-templates/home.php:173
+msgid "See who is being served and how many are ahead — on the waiting-room screen or your own phone."
+msgstr ""
+
+#: page-templates/home.php:186
+msgid "Our doctors"
+msgstr ""
+
+#: page-templates/home.php:187
+msgid "Specialists with morning and evening chambers."
+msgstr ""
+
+#: page-templates/home.php:190
+msgid "See all doctors →"
+msgstr ""
+
+#: page-templates/home.php:218
+msgid "fee"
+msgstr ""
+
+#: page-templates/home.php:220
+msgid "Book"
+msgstr ""
+
+#: page-templates/home.php:240
+msgid "Already booked?"
+msgstr ""
+
+#: page-templates/home.php:241
+msgid "Track your place in the queue in real time and arrive just before your turn."
+msgstr ""
+
+#: page-templates/home.php:252
+msgid "For clinics evaluating MedBook"
+msgstr ""
+
+#: page-templates/home.php:253
+msgid "Try the staff dashboard"
+msgstr ""
+
+#: page-templates/home.php:254
+msgid "Pick a role and log in with one click — no typing needed."
+msgstr ""
+
+#. translators: %s: demo role name, e.g. Manager
+#: page-templates/home.php:288
+#, php-format
+msgid "Log in as %s"
+msgstr ""
+
+#: page-templates/home.php:292
+msgid "Username"
+msgstr ""
+
+#: page-templates/home.php:293
+#: page-templates/login.php:48
+msgid "Password"
+msgstr ""
+
+#: page-templates/home.php:302
+msgid "Like what you see? Get MedBook for your clinic."
+msgstr ""
+
+#: page-templates/home.php:303
+msgid "Lieusoft sets it up on your own website with your doctors, schedules and branding."
+msgstr ""
+
+#: page-templates/home.php:316
+msgid "Clinic staff"
+msgstr ""
+
+#: page-templates/home.php:317
+msgid "Doctors and front-desk staff can sign in to manage the day's queue."
+msgstr ""
+
+#: page-templates/home.php:319
+msgid "Staff login"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Live Queue (MedBook)"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Login (MedBook)"
+msgstr ""
+
+#: page-templates/login.php:30
+msgid "Sign in to your MedBook account"
+msgstr ""
+
+#: page-templates/login.php:44
+#: page-templates/login.php:73
+msgid "Username or Email"
+msgstr ""
+
+#: page-templates/login.php:51
+msgid "Show password"
+msgstr ""
+
+#: page-templates/login.php:59
+msgid "Remember me"
+msgstr ""
+
+#: page-templates/login.php:61
+msgid "Forgot password?"
+msgstr ""
+
+#: page-templates/login.php:66
+msgid "Sign In"
+msgstr ""
+
+#: page-templates/login.php:71
+msgid "Enter your username or email and we'll send you a password reset link."
+msgstr ""
+
+#: page-templates/login.php:78
+msgid "Send Reset Link"
+msgstr ""
+
+#: page-templates/login.php:80
+msgid "Back to Sign In"
+msgstr ""

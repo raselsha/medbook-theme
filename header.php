@@ -38,7 +38,18 @@ $clinic_logo_id = (int) get_option('mdbk_clinic_logo', 0);
                     'fallback_cb'    => false,
                 ));
             }
+            // Lets a site add nav controls (e.g. a language switcher) without
+            // forking this file — inside the nav so it lands in the mobile
+            // dropdown too; prints nothing unless something hooks it.
+            do_action('medbook_header_extra');
             ?>
         </nav>
     </div>
 </header>
+<?php if (get_option('medbook_demo_accounts')) : ?>
+    <div class="medbook-home-ribbon">
+        <span class="medbook-home-ribbon-tag"><?php esc_html_e('Demo', 'medbook'); ?></span>
+        <span><?php esc_html_e('Every doctor, patient and booking on this site is fictional — no SMS or email is ever sent.', 'medbook'); ?></span>
+        <a href="<?php echo esc_url(home_url('/#staff')); ?>"><?php esc_html_e('Try the staff dashboard →', 'medbook'); ?></a>
+    </div>
+<?php endif; ?>

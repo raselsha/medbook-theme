@@ -1,0 +1,511 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MedBook theme 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-02T13:21:37+00:00\n"
+"PO-Revision-Date: 2026-11-02T13:21:37+00:00\n"
+"Language: bn_BD\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: functions.php:22
+msgid "Primary Menu"
+msgstr "প্রধান মেনু"
+
+#: functions.php:80
+msgid "Appointment"
+msgstr "অ্যাপয়েন্টমেন্ট"
+
+#: functions.php:81
+#: page-templates/doctors.php:54
+msgid "Doctors"
+msgstr "ডাক্তার"
+
+#: functions.php:82
+msgid "Live Queue"
+msgstr "লাইভ কিউ"
+
+#: functions.php:83
+msgid "Login"
+msgstr "লগইন"
+
+#: functions.php:101
+msgid "MedBook Menu"
+msgstr "MedBook মেনু"
+
+#: functions.php:176
+msgid "Dashboard"
+msgstr "ড্যাশবোর্ড"
+
+#: functions.php:188
+msgid "Custom Link"
+msgstr "কাস্টম লিংক"
+
+#: functions.php:189
+msgid "Logout"
+msgstr "লগআউট"
+
+#: functions.php:250
+msgid "Please enter your username and password."
+msgstr "অনুগ্রহ করে আপনার ইউজারনেম ও পাসওয়ার্ড দিন।"
+
+#: functions.php:263
+msgid "Incorrect username or password."
+msgstr "ইউজারনেম বা পাসওয়ার্ড সঠিক নয়।"
+
+#: functions.php:284
+msgid "Please enter your username or email."
+msgstr "অনুগ্রহ করে আপনার ইউজারনেম বা ইমেইল দিন।"
+
+#: functions.php:293
+msgid "If an account matches that information, a password reset link has been emailed to it."
+msgstr "এই তথ্যের সাথে কোনো অ্যাকাউন্ট মিললে সেই ইমেইলে পাসওয়ার্ড রিসেট লিংক পাঠানো হয়েছে।"
+
+#: header.php:27
+msgid "Menu"
+msgstr "মেনু"
+
+#: index.php:19
+msgid "Nothing found"
+msgstr "কিছু পাওয়া যায়নি"
+
+#: page-templates/appointment.php:33
+msgid "Connect with trusted specialists and confirm your visit in minutes."
+msgstr "বিশ্বস্ত বিশেষজ্ঞ ডাক্তারের সাথে যুক্ত হোন, কয়েক মিনিটেই অ্যাপয়েন্টমেন্ট নিশ্চিত করুন।"
+
+#: page-templates/appointment.php:56
+msgid "How Booking Works"
+msgstr "বুকিং যেভাবে কাজ করে"
+
+#: page-templates/appointment.php:60
+msgid "Choose a Specialty"
+msgstr "বিভাগ বেছে নিন"
+
+#: page-templates/appointment.php:61
+msgid "Browse our specialists and find the right doctor for your needs."
+msgstr "আমাদের বিশেষজ্ঞদের দেখুন এবং আপনার প্রয়োজন অনুযায়ী সঠিক ডাক্তার খুঁজে নিন।"
+
+#: page-templates/appointment.php:65
+msgid "Pick Your Time"
+msgstr "সময় বেছে নিন"
+
+#: page-templates/appointment.php:66
+msgid "See real-time availability and select a slot that fits your day."
+msgstr "তাৎক্ষণিক খালি সময় দেখুন এবং আপনার সুবিধামতো স্লট বেছে নিন।"
+
+#: page-templates/appointment.php:70
+msgid "Confirm & Visit"
+msgstr "নিশ্চিত করুন ও আসুন"
+
+#: page-templates/appointment.php:71
+msgid "Get instant confirmation, then track your place in the live queue."
+msgstr "সাথে সাথে নিশ্চিতকরণ পান, তারপর লাইভ কিউতে আপনার অবস্থান দেখুন।"
+
+#: page-templates/appointment.php:79
+msgid "Already Booked?"
+msgstr "আগেই বুক করেছেন?"
+
+#: page-templates/appointment.php:80
+msgid "Track your live position in the queue in real time."
+msgstr "কিউতে আপনার অবস্থান সরাসরি দেখুন।"
+
+#: page-templates/appointment.php:82
+#: page-templates/home.php:243
+msgid "View Live Queue"
+msgstr "লাইভ কিউ দেখুন"
+
+#: page-templates/login.php:30
+msgid "Sign in to your MedBook account"
+msgstr "আপনার MedBook অ্যাকাউন্টে সাইন ইন করুন"
+
+#: page-templates/login.php:44
+#: page-templates/login.php:73
+msgid "Username or Email"
+msgstr "ইউজারনেম বা ইমেইল"
+
+#: page-templates/home.php:293
+#: page-templates/login.php:48
+msgid "Password"
+msgstr "পাসওয়ার্ড"
+
+#: page-templates/login.php:51
+msgid "Show password"
+msgstr "পাসওয়ার্ড দেখান"
+
+#: page-templates/login.php:59
+msgid "Remember me"
+msgstr "আমাকে মনে রাখুন"
+
+#: page-templates/login.php:61
+msgid "Forgot password?"
+msgstr "পাসওয়ার্ড ভুলে গেছেন?"
+
+#: page-templates/login.php:66
+msgid "Sign In"
+msgstr "সাইন ইন"
+
+#: page-templates/login.php:71
+msgid "Enter your username or email and we'll send you a password reset link."
+msgstr "আপনার ইউজারনেম বা ইমেইল দিন, আমরা পাসওয়ার্ড রিসেট লিংক পাঠিয়ে দেব।"
+
+#: page-templates/login.php:78
+msgid "Send Reset Link"
+msgstr "রিসেট লিংক পাঠান"
+
+#: page-templates/login.php:80
+msgid "Back to Sign In"
+msgstr "সাইন ইনে ফিরে যান"
+
+#: header.php:51
+msgid "Demo"
+msgstr "ডেমো"
+
+#: header.php:52
+msgid "Every doctor, patient and booking on this site is fictional — no SMS or email is ever sent."
+msgstr "এই সাইটের সব ডাক্তার, রোগী ও বুকিং কাল্পনিক — কোনো SMS বা ইমেইল পাঠানো হয় না।"
+
+#: header.php:53
+msgid "Try the staff dashboard →"
+msgstr "স্টাফ ড্যাশবোর্ড ব্যবহার করে দেখুন →"
+
+#: page-templates/home.php:86
+msgid "Doctor appointments & live queue"
+msgstr "ডাক্তারের অ্যাপয়েন্টমেন্ট ও লাইভ কিউ"
+
+#: page-templates/home.php:87
+msgid "Book your serial online. Wait at home, not in the chamber."
+msgstr "অনলাইনে সিরিয়াল নিন। চেম্বারে নয়, অপেক্ষা করুন বাসায়।"
+
+#: page-templates/home.php:88
+msgid "Pick a specialty and a doctor, choose a time, and get your serial number instantly. Then follow the live queue from your phone and arrive just before your turn."
+msgstr "বিভাগ ও ডাক্তার বেছে নিন, সময় ঠিক করুন, আর সাথে সাথে সিরিয়াল নম্বর পেয়ে যান। তারপর ফোনে লাইভ কিউ দেখে নিজের পালার ঠিক আগে চলে আসুন।"
+
+#: page-templates/doctors.php:47
+#: page-templates/doctors.php:166
+#: page-templates/home.php:90
+#: page-templates/home.php:129
+msgid "Book an appointment"
+msgstr "অ্যাপয়েন্টমেন্ট বুক করুন"
+
+#: page-templates/doctors.php:49
+#: page-templates/doctors.php:120
+#: page-templates/home.php:92
+msgid "View live queue"
+msgstr "লাইভ কিউ দেখুন"
+
+#: page-templates/home.php:96
+msgid "Instant serial number"
+msgstr "সাথে সাথে সিরিয়াল নম্বর"
+
+#: page-templates/home.php:97
+msgid "QR check-in at the desk"
+msgstr "ডেস্কে QR দিয়ে চেক-ইন"
+
+#: page-templates/home.php:98
+msgid "Live queue on any phone"
+msgstr "যেকোনো ফোনে লাইভ কিউ"
+
+#: page-templates/home.php:102
+msgid "A doctor in a white coat with a stethoscope"
+msgstr "সাদা অ্যাপ্রন ও স্টেথোস্কোপ পরা একজন ডাক্তার"
+
+#: page-templates/home.php:106
+msgid "Booking confirmed"
+msgstr "বুকিং নিশ্চিত হয়েছে"
+
+#: page-templates/home.php:107
+msgid "Your serial arrives on screen in seconds"
+msgstr "কয়েক সেকেন্ডেই স্ক্রিনে সিরিয়াল পেয়ে যাবেন"
+
+#: page-templates/doctors.php:58
+#: page-templates/home.php:115
+msgid "Specialties"
+msgstr "বিভাগসমূহ"
+
+#: page-templates/home.php:130
+msgid "Four quick steps — it takes about a minute."
+msgstr "চারটি সহজ ধাপ — মাত্র এক মিনিটের মতো লাগে।"
+
+#: page-templates/home.php:132
+msgid "Choose a specialty from the dropdown"
+msgstr "ড্রপডাউন থেকে বিভাগ বেছে নিন"
+
+#: page-templates/home.php:133
+msgid "Pick your doctor"
+msgstr "ডাক্তার বেছে নিন"
+
+#: page-templates/home.php:134
+msgid "Select a date and time slot"
+msgstr "তারিখ ও সময় বেছে নিন"
+
+#: page-templates/home.php:135
+msgid "Enter your name and mobile — get your serial"
+msgstr "নাম ও মোবাইল নম্বর দিন — সিরিয়াল পেয়ে যান"
+
+#: page-templates/home.php:138
+msgid "Demo site: use any made-up name and a number like 01700000999 — nothing is sent anywhere."
+msgstr "ডেমো সাইট: যেকোনো কাল্পনিক নাম আর 01700000999 এর মতো নম্বর দিন — কোথাও কিছু পাঠানো হয় না।"
+
+#: page-templates/home.php:150
+msgid "A doctor talking with a patient"
+msgstr "রোগীর সাথে কথা বলছেন একজন ডাক্তার"
+
+#: page-templates/home.php:153
+msgid "How it works"
+msgstr "যেভাবে কাজ করে"
+
+#: page-templates/home.php:158
+msgid "Book online"
+msgstr "অনলাইনে বুক করুন"
+
+#: page-templates/home.php:159
+msgid "Pick a specialty, a doctor and a free slot. Your serial number appears straight away, with a QR code to show at the desk."
+msgstr "বিভাগ, ডাক্তার আর খালি সময় বেছে নিন। সাথে সাথে সিরিয়াল নম্বর পাবেন, সাথে ডেস্কে দেখানোর জন্য একটি QR কোড।"
+
+#: page-templates/home.php:165
+msgid "Check in when you arrive"
+msgstr "এসে চেক-ইন করুন"
+
+#: page-templates/home.php:166
+msgid "The front desk scans your QR code and your serial joins the doctor's live queue."
+msgstr "ফ্রন্ট ডেস্ক আপনার QR কোড স্ক্যান করবে, আর আপনার সিরিয়াল ডাক্তারের লাইভ কিউতে যুক্ত হবে।"
+
+#: page-templates/home.php:172
+msgid "Watch your turn live"
+msgstr "নিজের পালা সরাসরি দেখুন"
+
+#: page-templates/home.php:173
+msgid "See who is being served and how many are ahead — on the waiting-room screen or your own phone."
+msgstr "কে এখন ডাক্তার দেখাচ্ছেন আর আপনার আগে কতজন আছেন — ওয়েটিং রুমের স্ক্রিনে বা নিজের ফোনেই দেখুন।"
+
+#: page-templates/home.php:186
+msgid "Our doctors"
+msgstr "আমাদের ডাক্তারগণ"
+
+#: page-templates/home.php:187
+msgid "Specialists with morning and evening chambers."
+msgstr "সকাল ও সন্ধ্যার চেম্বারে বিশেষজ্ঞ ডাক্তার।"
+
+#: page-templates/home.php:190
+msgid "See all doctors →"
+msgstr "সব ডাক্তার দেখুন →"
+
+#: page-templates/home.php:218
+msgid "fee"
+msgstr "ফি"
+
+#: page-templates/home.php:220
+msgid "Book"
+msgstr "বুক করুন"
+
+#: page-templates/home.php:240
+msgid "Already booked?"
+msgstr "আগেই বুক করেছেন?"
+
+#: page-templates/home.php:241
+msgid "Track your place in the queue in real time and arrive just before your turn."
+msgstr "কিউতে আপনার অবস্থান সরাসরি দেখুন এবং নিজের পালার ঠিক আগে চলে আসুন।"
+
+#: page-templates/home.php:252
+msgid "For clinics evaluating MedBook"
+msgstr "যেসব ক্লিনিক MedBook যাচাই করছে তাদের জন্য"
+
+#: page-templates/home.php:253
+msgid "Try the staff dashboard"
+msgstr "স্টাফ ড্যাশবোর্ড ব্যবহার করে দেখুন"
+
+#: page-templates/home.php:292
+msgid "Username"
+msgstr "ইউজারনেম"
+
+#. translators: %s: demo role name, e.g. Manager
+#: page-templates/home.php:288
+#, php-format
+msgid "Log in as %s"
+msgstr "%s হিসেবে লগইন করুন"
+
+#: page-templates/home.php:316
+msgid "Clinic staff"
+msgstr "ক্লিনিক স্টাফ"
+
+#: page-templates/home.php:317
+msgid "Doctors and front-desk staff can sign in to manage the day's queue."
+msgstr "ডাক্তার ও ফ্রন্ট ডেস্ক স্টাফ সাইন ইন করে দিনের কিউ পরিচালনা করতে পারেন।"
+
+#: page-templates/home.php:319
+msgid "Staff login"
+msgstr "স্টাফ লগইন"
+
+#: page-templates/home.php:254
+msgid "Pick a role and log in with one click — no typing needed."
+msgstr "একটি রোল বেছে নিন, এক ক্লিকেই লগইন — কিছু টাইপ করতে হবে না।"
+
+#: page-templates/doctors.php:44
+msgid "Find the right specialist and book in a minute"
+msgstr "সঠিক বিশেষজ্ঞ খুঁজে নিন, এক মিনিটেই বুক করুন"
+
+#: page-templates/doctors.php:45
+msgid "See each doctor's chamber days and hours, then pick a free slot. Your serial number appears instantly."
+msgstr "প্রত্যেক ডাক্তারের চেম্বারের দিন ও সময় দেখুন, তারপর খালি সময় বেছে নিন। সাথে সাথে সিরিয়াল নম্বর পেয়ে যাবেন।"
+
+#: page-templates/doctors.php:62
+msgid "Serial"
+msgstr "সিরিয়াল"
+
+#: page-templates/doctors.php:63
+msgid "Instant"
+msgstr "তাৎক্ষণিক"
+
+#: page-templates/doctors.php:90
+msgid "Before your visit"
+msgstr "আসার আগে জেনে নিন"
+
+#: page-templates/doctors.php:91
+msgid "Three things that make the day go smoothly."
+msgstr "তিনটি বিষয় মনে রাখলে দিনটা সহজ হবে।"
+
+#: page-templates/doctors.php:96
+msgid "Keep your QR code"
+msgstr "QR কোড সাথে রাখুন"
+
+#: page-templates/doctors.php:97
+msgid "Save or print the confirmation after booking. The front desk scans it to check you in."
+msgstr "বুকিংয়ের পর নিশ্চিতকরণটি সেভ বা প্রিন্ট করে রাখুন। ফ্রন্ট ডেস্ক এটি স্ক্যান করে আপনাকে চেক-ইন করবে।"
+
+#: page-templates/doctors.php:101
+msgid "Check in on arrival"
+msgstr "এসেই চেক-ইন করুন"
+
+#: page-templates/doctors.php:102
+msgid "Your serial joins the doctor's live queue only after you check in at the desk."
+msgstr "ডেস্কে চেক-ইন করার পরই আপনার সিরিয়াল ডাক্তারের লাইভ কিউতে যুক্ত হবে।"
+
+#: page-templates/doctors.php:106
+msgid "Follow the queue on your phone"
+msgstr "ফোনেই কিউ দেখুন"
+
+#: page-templates/doctors.php:107
+msgid "The live queue shows who is with the doctor now and when the doctor is on a short break."
+msgstr "লাইভ কিউতে দেখা যায় এখন কে ডাক্তার দেখাচ্ছেন এবং ডাক্তার কখন ছোট বিরতিতে আছেন।"
+
+#: page-templates/doctors.php:117
+msgid "Common questions"
+msgstr "সাধারণ প্রশ্ন"
+
+#: page-templates/doctors.php:127
+msgid "How do I get a serial number?"
+msgstr "সিরিয়াল নম্বর কীভাবে পাব?"
+
+#: page-templates/doctors.php:130
+msgid "Choose a specialty and a doctor, pick a date the doctor sits and a free time, then enter your name and mobile number. The serial number is shown on screen as soon as you confirm."
+msgstr "বিভাগ ও ডাক্তার বেছে নিন, ডাক্তার যেদিন বসেন সেদিনের একটি তারিখ ও খালি সময় বেছে নিন, তারপর আপনার নাম ও মোবাইল নম্বর দিন। নিশ্চিত করার সাথে সাথেই স্ক্রিনে সিরিয়াল নম্বর দেখাবে।"
+
+#: page-templates/doctors.php:135
+msgid "Why are some days or times greyed out?"
+msgstr "কিছু দিন বা সময় ধূসর কেন?"
+
+#: page-templates/doctors.php:138
+msgid "Each doctor only sits on certain days. Times that are already booked, or that fall in the doctor's break, cannot be chosen."
+msgstr "প্রত্যেক ডাক্তার নির্দিষ্ট কিছু দিনে বসেন। যে সময় আগেই বুক হয়ে গেছে বা ডাক্তারের বিরতির মধ্যে পড়ে, সেটি বেছে নেওয়া যায় না।"
+
+#: page-templates/doctors.php:143
+msgid "What happens when I reach the clinic?"
+msgstr "ক্লিনিকে পৌঁছানোর পর কী করব?"
+
+#: page-templates/doctors.php:146
+msgid "Show your QR code at the front desk. Once you are checked in, your serial appears in the doctor's live queue and you are called in order."
+msgstr "ফ্রন্ট ডেস্কে আপনার QR কোড দেখান। চেক-ইন হয়ে গেলে আপনার সিরিয়াল ডাক্তারের লাইভ কিউতে দেখাবে এবং ক্রম অনুযায়ী আপনাকে ডাকা হবে।"
+
+#: page-templates/doctors.php:151
+msgid "Can I see how many patients are ahead of me?"
+msgstr "আমার আগে কতজন আছেন দেখা যাবে?"
+
+#: page-templates/doctors.php:154
+msgid "Yes. Open the Live Queue page on any phone to see who is with the doctor now and the patients still waiting."
+msgstr "হ্যাঁ। যেকোনো ফোনে লাইভ কিউ পেজ খুলুন — এখন কে ডাক্তার দেখাচ্ছেন আর কারা এখনো অপেক্ষায় আছেন, সব দেখতে পাবেন।"
+
+#: page-templates/doctors.php:163
+msgid "Found your doctor?"
+msgstr "ডাক্তার পেয়ে গেছেন?"
+
+#: page-templates/doctors.php:164
+msgid "Book now and get your serial number in seconds."
+msgstr "এখনই বুক করুন, কয়েক সেকেন্ডেই সিরিয়াল নম্বর পেয়ে যান।"
+
+#: page-templates/doctors.php:116
+msgid "FAQ"
+msgstr "প্রশ্নোত্তর"
+
+#: page-templates/doctors.php:118
+msgid "How booking, check-in and the live queue work."
+msgstr "বুকিং, চেক-ইন আর লাইভ কিউ কীভাবে কাজ করে।"
+
+#: page-templates/doctors.php:68
+msgid "A bright, clean treatment room with a dental chair"
+msgstr "ডেন্টাল চেয়ারসহ উজ্জ্বল, পরিষ্কার একটি চিকিৎসা কক্ষ"
+
+#: functions.php:41
+msgid "Hi Lieusoft, I tried the MedBook demo and would like it for my clinic."
+msgstr "হ্যালো Lieusoft, আমি MedBook ডেমোটি দেখেছি, আমার ক্লিনিকের জন্য এটি নিতে চাই।"
+
+#: page-templates/home.php:302
+msgid "Like what you see? Get MedBook for your clinic."
+msgstr "পছন্দ হয়েছে? আপনার ক্লিনিকের জন্য MedBook নিন।"
+
+#: page-templates/home.php:303
+msgid "Lieusoft sets it up on your own website with your doctors, schedules and branding."
+msgstr "Lieusoft আপনার নিজের ওয়েবসাইটে আপনার ডাক্তার, সময়সূচি ও ব্র্যান্ডিং দিয়ে এটি সেটআপ করে দেবে।"
+
+#: footer.php:23
+#: page-templates/home.php:308
+msgid "Chat on WhatsApp"
+msgstr "WhatsApp এ কথা বলুন"
+
+#: functions.php:159
+#: page-templates/home.php:306
+msgid "View price"
+msgstr "দাম দেখুন"
+
+#. Theme Name of the theme
+#: style.css
+msgid "MedBook"
+msgstr "MedBook"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://shafiulamraz.local"
+msgstr "https://shafiulamraz.local"
+
+#. Description of the theme
+#: style.css
+msgid "Custom theme for the clinic's public site. Provides the top navigation (Doctors / Appointment / Live Queue / Login) and four page templates that each embed one doctor-appointment plugin shortcode ([mdbk_doctor_list], [mdbk_appointment_form], [mdbk_queue_list]) plus a custom Login screen — every template still renders the page's own edited content too, so a page using one of these templates can be freely designed in the block editor while the functional widget always renders alongside it. The Book Appointment page is the site's front page."
+msgstr "ক্লিনিকের পাবলিক সাইটের জন্য কাস্টম থিম। উপরের নেভিগেশন (ডাক্তার / অ্যাপয়েন্টমেন্ট / লাইভ কিউ / লগইন) আর চারটি পেজ টেমপ্লেট দেয়, প্রতিটিতে doctor-appointment প্লাগিনের একটি শর্টকোড ([mdbk_doctor_list], [mdbk_appointment_form], [mdbk_queue_list]) বসানো, সাথে একটি কাস্টম লগইন স্ক্রিন — প্রতিটি টেমপ্লেট পেজের নিজের এডিট করা কনটেন্টও দেখায়, তাই এই টেমপ্লেট ব্যবহার করা পেজ ব্লক এডিটরে ইচ্ছেমতো সাজানো যায়, আর কাজের অংশটি সবসময় পাশে দেখায়। অ্যাপয়েন্টমেন্ট বুক করার পেজটি সাইটের প্রথম পেজ।"
+
+#. Author of the theme
+#: style.css
+msgid "Shahadat Hossain"
+msgstr "Shahadat Hossain"
+
+#. Template Name of the theme
+msgid "Appointment (MedBook)"
+msgstr "অ্যাপয়েন্টমেন্ট (MedBook)"
+
+#. Template Name of the theme
+msgid "Doctors (MedBook)"
+msgstr "ডাক্তার (MedBook)"
+
+#. Template Name of the theme
+msgid "Home (MedBook)"
+msgstr "হোম (MedBook)"
+
+#. Template Name of the theme
+msgid "Live Queue (MedBook)"
+msgstr "লাইভ কিউ (MedBook)"
+
+#. Template Name of the theme
+msgid "Login (MedBook)"
+msgstr "লগইন (MedBook)"

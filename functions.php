@@ -12,6 +12,7 @@ defined('ABSPATH') || exit;
  * accidentally deleted from it.
  */
 add_action('after_setup_theme', function () {
+    load_theme_textdomain('medbook', get_template_directory() . '/languages');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
@@ -21,6 +22,25 @@ add_action('after_setup_theme', function () {
         'medbook-primary' => __('Primary Menu', 'medbook'),
     ));
 });
+
+/**
+ * Demo sites only: where the "View price" links and the WhatsApp button point, from the
+ * `medbook_demo_sales` option ({buy_url, whatsapp}). Returns null on a real
+ * clinic's site, where that option doesn't exist, so nothing sales-related
+ * ever renders there.
+ */
+function medbook_demo_sales()
+{
+    $sales = get_option('medbook_demo_sales');
+    if (!is_array($sales) || empty($sales['buy_url'])) {
+        return null;
+    }
+    $number = preg_replace('/\D+/', '', (string) ($sales['whatsapp'] ?? ''));
+    return array(
+        'buy_url'      => $sales['buy_url'],
+        'whatsapp_url' => $number ? 'https://wa.me/' . $number . '?text=' . rawurlencode(__('Hi Lieusoft, I tried the MedBook demo and would like it for my clinic.', 'medbook')) : '',
+    );
+}
 
 /**
  * Finds the one published page assigned to a given page-templates/*.php
@@ -105,8 +125,12 @@ function medbook_setup_default_menu()
 }
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('medbook-theme', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+    // File time as the version, so every stylesheet edit busts browser and page caches.
+    wp_enqueue_style('medbook-theme', get_stylesheet_uri(), array(), (string) filemtime(get_stylesheet_directory() . '/style.css'));
     wp_enqueue_script('medbook-nav', get_theme_file_uri('assets/js/nav.js'), array(), wp_get_theme()->get('Version'), true);
+    if ('ar' === substr(determine_locale(), 0, 2)) {
+        wp_enqueue_style('medbook-arabic-font', 'https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap', array(), null);
+    }
 
     if (is_page_template('page-templates/login.php') && !is_user_logged_in()) {
         wp_enqueue_script('medbook-login', get_theme_file_uri('assets/js/login.js'), array('jquery'), wp_get_theme()->get('Version'), true);
@@ -123,6 +147,19 @@ add_action('wp_enqueue_scripts', function () {
  * appended after it — editing the registered menu's rendered items here
  * instead of duplicating menu-management UI in the theme itself.
  */
+// Demo sites only: a "View price" CTA at the end of the primary nav (see medbook_demo_sales()).
+add_filter('wp_nav_menu_items', function ($items, $args) {
+    $sales = medbook_demo_sales();
+    if (!$sales || !isset($args->theme_location) || 'medbook-primary' !== $args->theme_location) {
+        return $items;
+    }
+    return $items . sprintf(
+        '<li class="menu-item medbook-nav-cta"><a href="%s" target="_blank" rel="noopener">%s</a></li>',
+        esc_url($sales['buy_url']),
+        esc_html__('View price', 'medbook')
+    );
+}, 10, 2);
+
 add_filter('wp_nav_menu_objects', function ($items, $args) {
     if (!isset($args->theme_location) || 'medbook-primary' !== $args->theme_location) {
         return $items;

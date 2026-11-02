@@ -1,0 +1,511 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MedBook theme 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-02T13:21:37+00:00\n"
+"PO-Revision-Date: 2026-11-02T13:21:37+00:00\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#: functions.php:22
+msgid "Primary Menu"
+msgstr "القائمة الرئيسية"
+
+#: functions.php:80
+msgid "Appointment"
+msgstr "موعد"
+
+#: functions.php:81
+#: page-templates/doctors.php:54
+msgid "Doctors"
+msgstr "الأطباء"
+
+#: functions.php:82
+msgid "Live Queue"
+msgstr "قائمة الانتظار المباشرة"
+
+#: functions.php:83
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: functions.php:101
+msgid "MedBook Menu"
+msgstr "قائمة MedBook"
+
+#: functions.php:176
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: functions.php:188
+msgid "Custom Link"
+msgstr "رابط مخصص"
+
+#: functions.php:189
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+#: functions.php:250
+msgid "Please enter your username and password."
+msgstr "يرجى إدخال اسم المستخدم وكلمة المرور."
+
+#: functions.php:263
+msgid "Incorrect username or password."
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة."
+
+#: functions.php:284
+msgid "Please enter your username or email."
+msgstr "يرجى إدخال اسم المستخدم أو البريد الإلكتروني."
+
+#: functions.php:293
+msgid "If an account matches that information, a password reset link has been emailed to it."
+msgstr "إذا كان هناك حساب مطابق لهذه المعلومات، فقد أُرسل إليه رابط لإعادة تعيين كلمة المرور."
+
+#: header.php:27
+msgid "Menu"
+msgstr "القائمة"
+
+#: index.php:19
+msgid "Nothing found"
+msgstr "لم يتم العثور على شيء"
+
+#: page-templates/appointment.php:33
+msgid "Connect with trusted specialists and confirm your visit in minutes."
+msgstr "تواصل مع أخصائيين موثوقين وأكّد زيارتك في دقائق."
+
+#: page-templates/appointment.php:56
+msgid "How Booking Works"
+msgstr "كيف يتم الحجز"
+
+#: page-templates/appointment.php:60
+msgid "Choose a Specialty"
+msgstr "اختر التخصص"
+
+#: page-templates/appointment.php:61
+msgid "Browse our specialists and find the right doctor for your needs."
+msgstr "تصفّح أخصائيينا واعثر على الطبيب المناسب لاحتياجاتك."
+
+#: page-templates/appointment.php:65
+msgid "Pick Your Time"
+msgstr "اختر الوقت"
+
+#: page-templates/appointment.php:66
+msgid "See real-time availability and select a slot that fits your day."
+msgstr "اطّلع على المواعيد المتاحة فورًا واختر الوقت الذي يناسب يومك."
+
+#: page-templates/appointment.php:70
+msgid "Confirm & Visit"
+msgstr "أكّد وزُرنا"
+
+#: page-templates/appointment.php:71
+msgid "Get instant confirmation, then track your place in the live queue."
+msgstr "احصل على تأكيد فوري، ثم تابع دورك في قائمة الانتظار المباشرة."
+
+#: page-templates/appointment.php:79
+msgid "Already Booked?"
+msgstr "حجزت بالفعل؟"
+
+#: page-templates/appointment.php:80
+msgid "Track your live position in the queue in real time."
+msgstr "تابع موقعك في قائمة الانتظار لحظة بلحظة."
+
+#: page-templates/appointment.php:82
+#: page-templates/home.php:243
+msgid "View Live Queue"
+msgstr "عرض قائمة الانتظار المباشرة"
+
+#: page-templates/login.php:30
+msgid "Sign in to your MedBook account"
+msgstr "سجّل الدخول إلى حسابك في MedBook"
+
+#: page-templates/login.php:44
+#: page-templates/login.php:73
+msgid "Username or Email"
+msgstr "اسم المستخدم أو البريد الإلكتروني"
+
+#: page-templates/home.php:293
+#: page-templates/login.php:48
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: page-templates/login.php:51
+msgid "Show password"
+msgstr "إظهار كلمة المرور"
+
+#: page-templates/login.php:59
+msgid "Remember me"
+msgstr "تذكّرني"
+
+#: page-templates/login.php:61
+msgid "Forgot password?"
+msgstr "نسيت كلمة المرور؟"
+
+#: page-templates/login.php:66
+msgid "Sign In"
+msgstr "تسجيل الدخول"
+
+#: page-templates/login.php:71
+msgid "Enter your username or email and we'll send you a password reset link."
+msgstr "أدخل اسم المستخدم أو البريد الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور."
+
+#: page-templates/login.php:78
+msgid "Send Reset Link"
+msgstr "إرسال رابط إعادة التعيين"
+
+#: page-templates/login.php:80
+msgid "Back to Sign In"
+msgstr "العودة إلى تسجيل الدخول"
+
+#: header.php:51
+msgid "Demo"
+msgstr "تجريبي"
+
+#: header.php:52
+msgid "Every doctor, patient and booking on this site is fictional — no SMS or email is ever sent."
+msgstr "جميع الأطباء والمرضى والحجوزات في هذا الموقع وهمية — لا تُرسل أي رسائل SMS أو بريد إلكتروني."
+
+#: header.php:53
+msgid "Try the staff dashboard →"
+msgstr "جرّب لوحة تحكم الموظفين ←"
+
+#: page-templates/home.php:86
+msgid "Doctor appointments & live queue"
+msgstr "مواعيد الأطباء وقائمة الانتظار المباشرة"
+
+#: page-templates/home.php:87
+msgid "Book your serial online. Wait at home, not in the chamber."
+msgstr "احجز دورك عبر الإنترنت. انتظر في منزلك، لا في العيادة."
+
+#: page-templates/home.php:88
+msgid "Pick a specialty and a doctor, choose a time, and get your serial number instantly. Then follow the live queue from your phone and arrive just before your turn."
+msgstr "اختر التخصص والطبيب، وحدّد الوقت، واحصل على رقم دورك فورًا. ثم تابع قائمة الانتظار المباشرة من هاتفك واحضر قبل دورك مباشرة."
+
+#: page-templates/doctors.php:47
+#: page-templates/doctors.php:166
+#: page-templates/home.php:90
+#: page-templates/home.php:129
+msgid "Book an appointment"
+msgstr "احجز موعدًا"
+
+#: page-templates/doctors.php:49
+#: page-templates/doctors.php:120
+#: page-templates/home.php:92
+msgid "View live queue"
+msgstr "عرض قائمة الانتظار"
+
+#: page-templates/home.php:96
+msgid "Instant serial number"
+msgstr "رقم دور فوري"
+
+#: page-templates/home.php:97
+msgid "QR check-in at the desk"
+msgstr "تسجيل الحضور بـ QR عند الاستقبال"
+
+#: page-templates/home.php:98
+msgid "Live queue on any phone"
+msgstr "قائمة انتظار مباشرة على أي هاتف"
+
+#: page-templates/home.php:102
+msgid "A doctor in a white coat with a stethoscope"
+msgstr "طبيب يرتدي معطفًا أبيض وسماعة طبية"
+
+#: page-templates/home.php:106
+msgid "Booking confirmed"
+msgstr "تم تأكيد الحجز"
+
+#: page-templates/home.php:107
+msgid "Your serial arrives on screen in seconds"
+msgstr "يظهر رقم دورك على الشاشة خلال ثوانٍ"
+
+#: page-templates/doctors.php:58
+#: page-templates/home.php:115
+msgid "Specialties"
+msgstr "التخصصات"
+
+#: page-templates/home.php:130
+msgid "Four quick steps — it takes about a minute."
+msgstr "أربع خطوات سريعة — تستغرق دقيقة تقريبًا."
+
+#: page-templates/home.php:132
+msgid "Choose a specialty from the dropdown"
+msgstr "اختر التخصص من القائمة المنسدلة"
+
+#: page-templates/home.php:133
+msgid "Pick your doctor"
+msgstr "اختر طبيبك"
+
+#: page-templates/home.php:134
+msgid "Select a date and time slot"
+msgstr "اختر التاريخ والوقت"
+
+#: page-templates/home.php:135
+msgid "Enter your name and mobile — get your serial"
+msgstr "أدخل اسمك ورقم جوالك — واحصل على رقم دورك"
+
+#: page-templates/home.php:138
+msgid "Demo site: use any made-up name and a number like 01700000999 — nothing is sent anywhere."
+msgstr "موقع تجريبي: استخدم أي اسم وهمي ورقمًا مثل 01700000999 — لا يُرسل أي شيء."
+
+#: page-templates/home.php:150
+msgid "A doctor talking with a patient"
+msgstr "طبيبة تتحدث مع مريضة"
+
+#: page-templates/home.php:153
+msgid "How it works"
+msgstr "كيف يعمل"
+
+#: page-templates/home.php:158
+msgid "Book online"
+msgstr "احجز عبر الإنترنت"
+
+#: page-templates/home.php:159
+msgid "Pick a specialty, a doctor and a free slot. Your serial number appears straight away, with a QR code to show at the desk."
+msgstr "اختر التخصص والطبيب ووقتًا متاحًا. يظهر رقم دورك فورًا مع رمز QR لتقديمه عند الاستقبال."
+
+#: page-templates/home.php:165
+msgid "Check in when you arrive"
+msgstr "سجّل حضورك عند الوصول"
+
+#: page-templates/home.php:166
+msgid "The front desk scans your QR code and your serial joins the doctor's live queue."
+msgstr "يمسح موظف الاستقبال رمز QR الخاص بك فينضم دورك إلى قائمة انتظار الطبيب المباشرة."
+
+#: page-templates/home.php:172
+msgid "Watch your turn live"
+msgstr "تابع دورك مباشرة"
+
+#: page-templates/home.php:173
+msgid "See who is being served and how many are ahead — on the waiting-room screen or your own phone."
+msgstr "اعرف من يُخدم الآن وكم شخصًا قبلك — على شاشة غرفة الانتظار أو على هاتفك."
+
+#: page-templates/home.php:186
+msgid "Our doctors"
+msgstr "أطباؤنا"
+
+#: page-templates/home.php:187
+msgid "Specialists with morning and evening chambers."
+msgstr "أخصائيون في عيادات صباحية ومسائية."
+
+#: page-templates/home.php:190
+msgid "See all doctors →"
+msgstr "عرض جميع الأطباء ←"
+
+#: page-templates/home.php:218
+msgid "fee"
+msgstr "رسوم"
+
+#: page-templates/home.php:220
+msgid "Book"
+msgstr "احجز"
+
+#: page-templates/home.php:240
+msgid "Already booked?"
+msgstr "حجزت بالفعل؟"
+
+#: page-templates/home.php:241
+msgid "Track your place in the queue in real time and arrive just before your turn."
+msgstr "تابع موقعك في قائمة الانتظار لحظة بلحظة واحضر قبل دورك مباشرة."
+
+#: page-templates/home.php:252
+msgid "For clinics evaluating MedBook"
+msgstr "للعيادات التي تقيّم MedBook"
+
+#: page-templates/home.php:253
+msgid "Try the staff dashboard"
+msgstr "جرّب لوحة تحكم الموظفين"
+
+#: page-templates/home.php:292
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#. translators: %s: demo role name, e.g. Manager
+#: page-templates/home.php:288
+#, php-format
+msgid "Log in as %s"
+msgstr "تسجيل الدخول كـ %s"
+
+#: page-templates/home.php:316
+msgid "Clinic staff"
+msgstr "موظفو العيادة"
+
+#: page-templates/home.php:317
+msgid "Doctors and front-desk staff can sign in to manage the day's queue."
+msgstr "يمكن للأطباء وموظفي الاستقبال تسجيل الدخول لإدارة قائمة انتظار اليوم."
+
+#: page-templates/home.php:319
+msgid "Staff login"
+msgstr "دخول الموظفين"
+
+#: page-templates/home.php:254
+msgid "Pick a role and log in with one click — no typing needed."
+msgstr "اختر دورًا وسجّل الدخول بنقرة واحدة — دون الحاجة إلى الكتابة."
+
+#: page-templates/doctors.php:44
+msgid "Find the right specialist and book in a minute"
+msgstr "اعثر على الأخصائي المناسب واحجز في دقيقة"
+
+#: page-templates/doctors.php:45
+msgid "See each doctor's chamber days and hours, then pick a free slot. Your serial number appears instantly."
+msgstr "اطّلع على أيام وساعات عيادة كل طبيب، ثم اختر وقتًا متاحًا. يظهر رقم دورك فورًا."
+
+#: page-templates/doctors.php:62
+msgid "Serial"
+msgstr "رقم الدور"
+
+#: page-templates/doctors.php:63
+msgid "Instant"
+msgstr "فوري"
+
+#: page-templates/doctors.php:90
+msgid "Before your visit"
+msgstr "قبل زيارتك"
+
+#: page-templates/doctors.php:91
+msgid "Three things that make the day go smoothly."
+msgstr "ثلاثة أمور تجعل يومك أسهل."
+
+#: page-templates/doctors.php:96
+msgid "Keep your QR code"
+msgstr "احتفظ برمز QR"
+
+#: page-templates/doctors.php:97
+msgid "Save or print the confirmation after booking. The front desk scans it to check you in."
+msgstr "احفظ تأكيد الحجز أو اطبعه. يمسحه موظف الاستقبال لتسجيل حضورك."
+
+#: page-templates/doctors.php:101
+msgid "Check in on arrival"
+msgstr "سجّل حضورك عند الوصول"
+
+#: page-templates/doctors.php:102
+msgid "Your serial joins the doctor's live queue only after you check in at the desk."
+msgstr "لا ينضم دورك إلى قائمة انتظار الطبيب المباشرة إلا بعد تسجيل حضورك عند الاستقبال."
+
+#: page-templates/doctors.php:106
+msgid "Follow the queue on your phone"
+msgstr "تابع قائمة الانتظار من هاتفك"
+
+#: page-templates/doctors.php:107
+msgid "The live queue shows who is with the doctor now and when the doctor is on a short break."
+msgstr "تُظهر قائمة الانتظار المباشرة من يُعاين الآن ومتى يكون الطبيب في استراحة قصيرة."
+
+#: page-templates/doctors.php:117
+msgid "Common questions"
+msgstr "أسئلة شائعة"
+
+#: page-templates/doctors.php:127
+msgid "How do I get a serial number?"
+msgstr "كيف أحصل على رقم دور؟"
+
+#: page-templates/doctors.php:130
+msgid "Choose a specialty and a doctor, pick a date the doctor sits and a free time, then enter your name and mobile number. The serial number is shown on screen as soon as you confirm."
+msgstr "اختر التخصص والطبيب، ثم تاريخًا يعمل فيه الطبيب ووقتًا متاحًا، وأدخل اسمك ورقم جوالك. يظهر رقم الدور على الشاشة فور التأكيد."
+
+#: page-templates/doctors.php:135
+msgid "Why are some days or times greyed out?"
+msgstr "لماذا تظهر بعض الأيام أو الأوقات باللون الرمادي؟"
+
+#: page-templates/doctors.php:138
+msgid "Each doctor only sits on certain days. Times that are already booked, or that fall in the doctor's break, cannot be chosen."
+msgstr "يعمل كل طبيب في أيام محددة فقط. ولا يمكن اختيار الأوقات المحجوزة مسبقًا أو التي تقع ضمن استراحة الطبيب."
+
+#: page-templates/doctors.php:143
+msgid "What happens when I reach the clinic?"
+msgstr "ماذا يحدث عند وصولي إلى العيادة؟"
+
+#: page-templates/doctors.php:146
+msgid "Show your QR code at the front desk. Once you are checked in, your serial appears in the doctor's live queue and you are called in order."
+msgstr "اعرض رمز QR عند الاستقبال. بعد تسجيل حضورك يظهر دورك في قائمة انتظار الطبيب المباشرة ويُنادى عليك بالترتيب."
+
+#: page-templates/doctors.php:151
+msgid "Can I see how many patients are ahead of me?"
+msgstr "هل يمكنني معرفة عدد المرضى قبلي؟"
+
+#: page-templates/doctors.php:154
+msgid "Yes. Open the Live Queue page on any phone to see who is with the doctor now and the patients still waiting."
+msgstr "نعم. افتح صفحة قائمة الانتظار المباشرة على أي هاتف لترى من يُعاين الآن والمرضى المنتظرين."
+
+#: page-templates/doctors.php:163
+msgid "Found your doctor?"
+msgstr "وجدت طبيبك؟"
+
+#: page-templates/doctors.php:164
+msgid "Book now and get your serial number in seconds."
+msgstr "احجز الآن واحصل على رقم دورك خلال ثوانٍ."
+
+#: page-templates/doctors.php:116
+msgid "FAQ"
+msgstr "الأسئلة الشائعة"
+
+#: page-templates/doctors.php:118
+msgid "How booking, check-in and the live queue work."
+msgstr "كيف يعمل الحجز وتسجيل الحضور وقائمة الانتظار المباشرة."
+
+#: page-templates/doctors.php:68
+msgid "A bright, clean treatment room with a dental chair"
+msgstr "غرفة علاج مشرقة ونظيفة بها كرسي أسنان"
+
+#: functions.php:41
+msgid "Hi Lieusoft, I tried the MedBook demo and would like it for my clinic."
+msgstr "مرحبًا Lieusoft، جرّبت عرض MedBook التجريبي وأرغب في الحصول عليه لعيادتي."
+
+#: page-templates/home.php:302
+msgid "Like what you see? Get MedBook for your clinic."
+msgstr "أعجبك ما رأيت؟ احصل على MedBook لعيادتك."
+
+#: page-templates/home.php:303
+msgid "Lieusoft sets it up on your own website with your doctors, schedules and branding."
+msgstr "تقوم Lieusoft بإعداده على موقعك الخاص مع أطبائك ومواعيدك وهويتك التجارية."
+
+#: footer.php:23
+#: page-templates/home.php:308
+msgid "Chat on WhatsApp"
+msgstr "تواصل عبر واتساب"
+
+#: functions.php:159
+#: page-templates/home.php:306
+msgid "View price"
+msgstr "عرض السعر"
+
+#. Theme Name of the theme
+#: style.css
+msgid "MedBook"
+msgstr "MedBook"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://shafiulamraz.local"
+msgstr "https://shafiulamraz.local"
+
+#. Description of the theme
+#: style.css
+msgid "Custom theme for the clinic's public site. Provides the top navigation (Doctors / Appointment / Live Queue / Login) and four page templates that each embed one doctor-appointment plugin shortcode ([mdbk_doctor_list], [mdbk_appointment_form], [mdbk_queue_list]) plus a custom Login screen — every template still renders the page's own edited content too, so a page using one of these templates can be freely designed in the block editor while the functional widget always renders alongside it. The Book Appointment page is the site's front page."
+msgstr "قالب مخصص للموقع العام للعيادة. يوفر شريط التنقل العلوي (الأطباء / المواعيد / الدور المباشر / تسجيل الدخول) وأربعة قوالب صفحات يضم كل منها رمزًا مختصرًا من إضافة doctor-appointment ([mdbk_doctor_list]، [mdbk_appointment_form]، [mdbk_queue_list]) إضافة إلى شاشة تسجيل دخول مخصصة — ويعرض كل قالب أيضًا المحتوى المحرر للصفحة نفسها، لذا يمكن تصميم الصفحة التي تستخدم أحد هذه القوالب بحرية في محرر المكوّنات بينما يظهر الجزء الوظيفي دائمًا بجانبه. صفحة حجز الموعد هي الصفحة الرئيسية للموقع."
+
+#. Author of the theme
+#: style.css
+msgid "Shahadat Hossain"
+msgstr "Shahadat Hossain"
+
+#. Template Name of the theme
+msgid "Appointment (MedBook)"
+msgstr "المواعيد (MedBook)"
+
+#. Template Name of the theme
+msgid "Doctors (MedBook)"
+msgstr "الأطباء (MedBook)"
+
+#. Template Name of the theme
+msgid "Home (MedBook)"
+msgstr "الرئيسية (MedBook)"
+
+#. Template Name of the theme
+msgid "Live Queue (MedBook)"
+msgstr "الدور المباشر (MedBook)"
+
+#. Template Name of the theme
+msgid "Login (MedBook)"
+msgstr "تسجيل الدخول (MedBook)"
